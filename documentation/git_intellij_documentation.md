@@ -29,7 +29,7 @@
 
 ![img_4.png](img_4.png)
 
-- Name the branch(shouldn't be a keyword)  
+- Name the branch (shouldn't be a keyword)  
 - Create
 
 ![img_5.png](img_5.png)
