@@ -37,3 +37,17 @@ VALUES
   
 -- Fetch the Data in Books Table
 SELECT * FROM Library.Books;
+
+-- Create 'Publishers' table to store publisher details
+CREATE TABLE Publishers (
+    PublisherID INT NOT NULL AUTO_INCREMENT,      -- Unique identifier for each publisher
+    Name VARCHAR(255) NOT NULL,                   -- Publisher name
+    PRIMARY KEY (PublisherID)                     -- Set PublisherID as Primary Key
+);
+
+-- Create 'Genres' table to store book genres
+CREATE TABLE Genres (
+    GenreID INT NOT NULL AUTO_INCREMENT,          -- Unique identifier for each genre
+    Name VARCHAR(255) NOT NULL,                  -- Genre name
+    PRIMARY KEY (GenreID)                         -- Set GenreID as Primary Key
+);
