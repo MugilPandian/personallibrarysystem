@@ -37,3 +37,64 @@ VALUES
   
 -- Fetch the Data in Books Table
 SELECT * FROM Library.Books;
+
+-- Create Authors Table under Library Schema
+CREATE TABLE Authors(
+    AuthorID INT NOT NULL AUTO_INCREMENT,
+    AuthorName VARCHAR(255) NOT NULL,
+    Country VARCHAR(255),
+    PRIMARY KEY (AuthorID)
+);
+
+---- Sample Data for Authors Table
+INSERT INTO Authors
+    (AuthorName,Country)
+VALUES
+    ("Toni Morrison", "UK"),
+    ("Toni Morrison","UK"),
+    ("Frank Herbert","US"),
+    ("Emma Donoghue","Chicago"),
+    ("Stephen King","Russia");
+
+-- Fetch the Data in Authors Table
+SELECT * FROM Library.Authors;
+
+-- Create Publishers Table under Library Schema
+CREATE TABLE Publishers(
+    PublisherID INT NOT NULL AUTO_INCREMENT,      -- Unique identifier for each publisher
+    PublisherName VARCHAR(255) NOT NULL,                   -- Publisher name
+    PRIMARY KEY (PublisherID)                     -- Set PublisherID as Primary Key
+);
+
+-- Sample Data for Publishers Table
+INSERT INTO Publishers
+    (PublisherName)
+VALUES
+    ("Alfred A. Knopf"),
+    ("Alfred A. Knopf"),
+    ("Chilton Books"),
+    ("Little, Brown and Company"),
+    ("Doubleday");
+
+-- Fetch the Data in Publishers Table
+SELECT * FROM Library.Publishers;
+
+-- Create Genres Table under Library Schema
+CREATE TABLE Genres(
+    GenreID INT NOT NULL AUTO_INCREMENT,          -- Unique identifier for each genre
+    GenreName VARCHAR(255) NOT NULL,                  -- Genre name
+    PRIMARY KEY (GenreID)                         -- Set GenreID as Primary Key
+);
+
+-- Sample Data for Genres Table
+INSERT INTO Genres
+    (GenreName)
+VALUES
+    ("Fiction"),
+    ("Horror"),
+    ("Comedy"),
+    ("Drama"),
+    ("Non-Fiction");
+
+-- Fetch the Data in Genres Table
+SELECT * FROM Library.Genres;
