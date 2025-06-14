@@ -5,5 +5,5 @@ import com.mugilpandian.personallibrarysystem.entity.Authors;
 import java.util.List;
 
 public interface AuthorsService {
-    List<Authors> fetchAuthorList();
+    List<Authors> fetchAuthorsList();
 }

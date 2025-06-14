@@ -14,6 +14,6 @@ public class AuthorsController {
     private AuthorsService authorsService;
     @GetMapping("/fetchAllAuthors")
     public List<Authors> fetchAllAuthors(){
-        return authorsService.fetchAuthorList();
+        return authorsService.fetchAuthorsList();
     }
 }

@@ -10,10 +10,13 @@ import java.util.List;
 
 @Service
 public class AuthorsServiceImpl implements AuthorsService {
+
     @Autowired
     private AuthorsRepository authorsRepository;
+
     @Override
     public List<Authors> fetchAuthorsList(){
         return (List<Authors>) authorsRepository.findAll();
     }
+
 }
